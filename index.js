@@ -16,18 +16,26 @@ class App extends React.Component{
                 </header>
                 <div className="break-session">
                     <div id="break-label">
-                        <button id="break-decrement" className="btn btn-primary">-</button>
-                        <h3 id="break-length">{this.state.breakLength}</h3>
-                        <button id="break-increment" className="btn btn-primary">+</button>
+                        <h1>Break Length</h1>
+                        <div id="break-section">
+                            <button id="break-decrement" className="btn btn-primary">-</button>
+                            <h3 id="break-length">{this.state.breakLength}</h3>
+                            <button id="break-increment" className="btn btn-primary">+</button>
+                        </div>
                     </div>
+
                     <div id="session-label">
-                        <button id="session-decrement" className="btn btn-primary">-</button>
-                        <h3 id="session-length">{this.state.sessionLength}</h3>
-                        <button id="session-increment" className="btn btn-primary">+</button>
+                        <h1>Session Length</h1>
+                        <div id="session-section">
+                            <button id="session-decrement" className="btn btn-primary">-</button>
+                            <h3 id="session-length">{this.state.sessionLength}</h3>
+                            <button id="session-increment" className="btn btn-primary">+</button>
+                        </div>
                     </div>
+                   
                 </div>
                 <div id="timer-label">
-                    
+
                 </div>
             </div>
         )
